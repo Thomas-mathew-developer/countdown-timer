@@ -1,0 +1,11 @@
+<div class="timer-container">
+    <div class="timer-card">
+        <h2>Seconds Left to Deadline</h2>
+        <div class="countdown-value">
+            {{ secondsLeft$ | async }}
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-bar" [style.width.%]="progressValue"></div>
+        </div>
+    </div>
+</div>
